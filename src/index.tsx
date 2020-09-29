@@ -1,2 +1,2 @@
-export { Button } from './views/button/Button';
-export { TextBox } from './views/text-box/TextBox';
+export { Modal } from './views/modal/Modal';
+export { Card } from './views/card/Card';

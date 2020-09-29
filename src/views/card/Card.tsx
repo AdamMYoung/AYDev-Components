@@ -39,8 +39,8 @@ type Props = {
   minHeight?: string;
 };
 
-const CardHeader = ({ children }: { children: React.ReactNode }) => <>{children}</>;
-const CardBody = ({ children }: { children: React.ReactNode }) => <>{children}</>;
+const CardHeader = ({ children }: { children: React.ReactNode }) => <Row className='h-auto h-sm-100'>{children}</Row>;
+const CardBody = ({ children }: { children: React.ReactNode }) => <Row className='h-auto h-sm-100'>{children}</Row>;
 
 const CardEntry = (props: { children?: React.ReactNode }) => {
   return (
@@ -56,7 +56,7 @@ export const Card = (props: Props) => {
   return (
     <RoundedCard className='p-2' {...rest}>
       <Container fluid className='h-auto h-sm-100'>
-        <Row className='h-auto h-sm-100'>{children}</Row>
+        {children}
       </Container>
     </RoundedCard>
   );

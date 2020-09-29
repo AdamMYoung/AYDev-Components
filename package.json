@@ -1,7 +1,7 @@
 {
-  "name": "react-component-library-kickstart",
+  "name": "aydev-components",
   "version": "1.0.0",
-  "description": "Template structure for developing React UI libraries",
+  "description": "Component library used across personal projects",
   "author": "Adam Young",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",

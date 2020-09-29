@@ -39,7 +39,10 @@ type Props = {
   minHeight?: string;
 };
 
-const CardBody = (props: { children?: React.ReactNode }) => {
+const CardHeader = ({ children }: { children: React.ReactNode }) => <>{children}</>;
+const CardBody = ({ children }: { children: React.ReactNode }) => <>{children}</>;
+
+const CardEntry = (props: { children?: React.ReactNode }) => {
   return (
     <Col xs={12} className='mt-2 d-flex'>
       {props.children}
@@ -59,8 +62,12 @@ export const Card = (props: Props) => {
   );
 };
 
-Card.Picture = CardImage;
-Card.Title = CardTitle;
-Card.List = CardList;
+CardHeader.Image = CardImage;
+CardHeader.Title = CardTitle;
+
+CardBody.List = CardList;
+CardBody.ButtonRow = CardButtonRow;
+
+Card.Header = CardHeader;
 Card.Body = CardBody;
-Card.ButtonRow = CardButtonRow;
+Card.Entry = CardEntry;

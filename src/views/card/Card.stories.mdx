@@ -1,17 +1,30 @@
 import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
 import { Card } from './Card';
+import profile from '../../assets/profile.png';
 
 <Meta title='Components/Card' component={Card} />
 
 # Card
 
-A dynamic card component with various child components.
+A dynamic card component with various compositional components.
 
 ### Title
 
 <Story name='Title'>
   <Card>
-    <Card.Title>Title</Card.Title>
+    <Card.Header>
+      <Card.Header.Title>Title</Card.Header.Title>
+    </Card.Header>
+  </Card>
+</Story>
+
+### Image
+
+<Story name='Image'>
+  <Card>
+    <Card.Header>
+      <Card.Header.Image src={profile} />
+    </Card.Header>
   </Card>
 </Story>
 
@@ -19,11 +32,13 @@ A dynamic card component with various child components.
 
 <Story name='List'>
   <Card>
-    <Card.List>
-      <Card.List.Entry>Test 1</Card.List.Entry>
-      <Card.List.Entry>Test 2</Card.List.Entry>
-      <Card.List.Entry>Test 3</Card.List.Entry>
-    </Card.List>
+    <Card.Body>
+      <Card.Body.List>
+        <Card.Body.List.Entry>Test 1</Card.Body.List.Entry>
+        <Card.Body.List.Entry>Test 2</Card.Body.List.Entry>
+        <Card.Body.List.Entry>Test 3</Card.Body.List.Entry>
+      </Card.Body.List>
+    </Card.Body>
   </Card>
 </Story>
 
@@ -31,11 +46,36 @@ A dynamic card component with various child components.
 
 <Story name='Buttons'>
   <Card>
-    <Card.ButtonRow>
-      <Card.ButtonRow.Button>One</Card.ButtonRow.Button>
-      <Card.ButtonRow.Button>Two</Card.ButtonRow.Button>
-      <Card.ButtonRow.Button>Three</Card.ButtonRow.Button>
-    </Card.ButtonRow>
+    <Card.Body>
+      <Card.Body.ButtonRow>
+        <Card.Body.ButtonRow.Button>One</Card.Body.ButtonRow.Button>
+        <Card.Body.ButtonRow.Button>Two</Card.Body.ButtonRow.Button>
+        <Card.Body.ButtonRow.Button>Three</Card.Body.ButtonRow.Button>
+      </Card.Body.ButtonRow>
+    </Card.Body>
+  </Card>
+</Story>
+
+### Kitchen Sink
+
+<Story name='Kitchen Sink'>
+  <Card>
+    <Card.Header>
+      <Card.Header.Image src={profile} />
+      <Card.Header.Title>Title</Card.Header.Title>
+    </Card.Header>
+    <Card.Body>
+      <Card.Body.List>
+        <Card.Body.List.Entry>Test 1</Card.Body.List.Entry>
+        <Card.Body.List.Entry>Test 2</Card.Body.List.Entry>
+        <Card.Body.List.Entry>Test 3</Card.Body.List.Entry>
+      </Card.Body.List>
+      <Card.Body.ButtonRow>
+        <Card.Body.ButtonRow.Button>One</Card.Body.ButtonRow.Button>
+        <Card.Body.ButtonRow.Button>Two</Card.Body.ButtonRow.Button>
+        <Card.Body.ButtonRow.Button>Three</Card.Body.ButtonRow.Button>
+      </Card.Body.ButtonRow>
+    </Card.Body>
   </Card>
 </Story>
 

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
+import { Col, Image } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const ProfileImage = styled(Image)`
   margin-left: auto;
   margin-right: auto;
+  max-height: 200px;
 
   @media (max-width: 768px) {
     max-width: 75%;

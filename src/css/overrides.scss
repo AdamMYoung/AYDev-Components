@@ -1,0 +1,24 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+//Bootstrap/SASS overrides
+//See more here: https://getbootstrap.com/docs/4.0/getting-started/theming/
+//Find the variables here: https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
+
+$font-family-base: 'Open Sans', sans-serif;
+
+$theme-colors: (
+  'primary': $primary-color,
+);
+
+$btn-border-radius: 20px;
+$alert-border-radius: 20px;
+
+$input-border-radius: 25px;
+$input-bg: rgb(238, 238, 239);
+$input-border-color: transparent;
+$input-placeholder-color: #838388;
+
+$modal-content-border-color: transparent;
+$modal-content-border-radius: 10px;
+$modal-header-border-color: transparent;

@@ -1,0 +1,27 @@
+//All global variables to be used within other sass files
+
+//Colours
+$primary-color: #005aa5;
+$master-background-color: #c9c9cb;
+$font-color: #000000;
+$font-color-inverse: #ffffff;
+$enabled-color: #49ac4d;
+$disabled-color: red;
+
+//Text
+$font-heading-one-size: 30px;
+$font-heading-two-size: 20px;
+$font-navigation-size: 18px;
+
+//Layout
+$card-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+);
+
+//Navbar
+$navbar-height: 100px;

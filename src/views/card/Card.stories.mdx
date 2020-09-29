@@ -1,0 +1,42 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Card } from './Card';
+
+<Meta title='Components/Card' component={Card} />
+
+# Card
+
+A dynamic card component with various child components.
+
+### Title
+
+<Story name='Title'>
+  <Card>
+    <Card.Title>Title</Card.Title>
+  </Card>
+</Story>
+
+### List
+
+<Story name='List'>
+  <Card>
+    <Card.List>
+      <Card.List.Entry>Test 1</Card.List.Entry>
+      <Card.List.Entry>Test 2</Card.List.Entry>
+      <Card.List.Entry>Test 3</Card.List.Entry>
+    </Card.List>
+  </Card>
+</Story>
+
+### Buttons
+
+<Story name='Buttons'>
+  <Card>
+    <Card.ButtonRow>
+      <Card.ButtonRow.Button>One</Card.ButtonRow.Button>
+      <Card.ButtonRow.Button>Two</Card.ButtonRow.Button>
+      <Card.ButtonRow.Button>Three</Card.ButtonRow.Button>
+    </Card.ButtonRow>
+  </Card>
+</Story>
+
+<ArgsTable for={Card} />

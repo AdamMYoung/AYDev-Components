@@ -21,11 +21,6 @@ const ListItem = styled(ListGroup.Item)`
   }
 `;
 
-const FullWidthListGroup = styled(ListGroup)`
-  margin-left: auto;
-  margin-right: auto;
-`;
-
 type Props = {
   children?: React.ReactNode;
 };
@@ -47,7 +42,7 @@ const CardListEntry = (props: EntryProps) => {
 export const CardList = (props: Props) => {
   return (
     <Col xs={12} className='mt-2 d-flex align-items-center'>
-      <FullWidthListGroup>{props.children}</FullWidthListGroup>
+      <ListGroup>{props.children}</ListGroup>
     </Col>
   );
 };

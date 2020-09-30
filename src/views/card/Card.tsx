@@ -39,12 +39,16 @@ type Props = {
   minHeight?: string;
 };
 
-const CardHeader = ({ children }: { children: React.ReactNode }) => <Row className='h-auto h-sm-100'>{children}</Row>;
-const CardBody = ({ children }: { children: React.ReactNode }) => <Row className='h-auto h-sm-100'>{children}</Row>;
+const CardHeader = ({ children }: { children: React.ReactNode }) => (
+  <Row className='h-auto my-2 h-sm-100'>{children}</Row>
+);
+const CardBody = ({ children }: { children: React.ReactNode }) => (
+  <Row className='h-auto my-2 h-sm-100'>{children}</Row>
+);
 
 const CardEntry = (props: { children?: React.ReactNode }) => {
   return (
-    <Col xs={12} className='mt-2 d-flex'>
+    <Col xs={12} className='my-3 d-flex'>
       {props.children}
     </Col>
   );

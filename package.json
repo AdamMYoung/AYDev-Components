@@ -1,6 +1,6 @@
 {
   "name": "aydev-components",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Component library used across personal projects",
   "author": "Adam Young",
   "main": "dist/index.js",
